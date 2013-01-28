@@ -56,7 +56,7 @@ module ActiveScaffold
       end
 
       def render_parent?
-        nested_singular_association? || params[:parent_sti]
+        nested_singular_association? || params[:parent_sti] || params[:parent_controller]
       end
 
       def render_parent_options
